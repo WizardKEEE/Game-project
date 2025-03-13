@@ -152,7 +152,7 @@ function spin(){
     // If the bet is less then the balance and the balance is not 0 and the bet is not blank and greater than 0
     if(bet <= balance && balance !== 0 && bet !== '' && bet > 0){
 
-        //Reseting the color to it's default background color
+        // Reseting the color to it's default background color
         topLeft.style.backgroundColor = "rgb(200, 20, 200)";
         topMiddle.style.backgroundColor = "rgb(200, 20, 200)";
         topRight.style.backgroundColor = "rgb(200, 20, 200)";
