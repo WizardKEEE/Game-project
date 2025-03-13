@@ -1,5 +1,5 @@
 // Alert to let Player know how to play
-alert("How To Play \nEnter an amount into the 'Enter Bet' area less than the balance and more that 0 \nThen click the button to spin");
+alert("How To Play \nEnter an amount into the 'Enter Bet' area less than the balance and more that 0 \nThen click the button to spin or press Enter or Space \nWARNING \nClicking the button then pressing enter will cause a multipress and can break the game click off of the button before using enter");
 
 // shapes △▢X✰
 // Declaration of arrays for each column
