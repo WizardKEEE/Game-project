@@ -151,7 +151,8 @@ function spin(){
 
     // If the bet is less then the balance and the balance is not 0 and the bet is not blank and greater than 0
     if(bet <= balance && balance !== 0 && bet !== '' && bet > 0){
-        
+
+        //Reseting the color to it's default background color
         topLeft.style.backgroundColor = "rgb(200, 20, 200)";
         topMiddle.style.backgroundColor = "rgb(200, 20, 200)";
         topRight.style.backgroundColor = "rgb(200, 20, 200)";
@@ -162,14 +163,18 @@ function spin(){
         bottomMiddle.style.backgroundColor = "rgb(200, 20, 200)";
         bottomRight.style.backgroundColor = "rgb(200, 20, 200)";
 
+        // The "Spinning" "Animation"
         let interval;
         for(i = 0; i < 1000; i++){
             setTimeout(function(){
             interval = setInterval(spinWheel(), 100); // Runs every 100ms
             }, 100); // Run after 100 ms
         }
+
+        // Clear the Interval so the Timeout can start immediately after
         clearInterval(interval)
-        
+
+        // Run after the "Animation"
         setTimeout(function(){
             balance = balance - bet; // take away the bet amount away from the balance
             displayCol1(col1[rannum1], col1[prevrannum1], col1[nextrannum1]); // Call the function with the randomly generated numbers
@@ -182,7 +187,7 @@ function spin(){
                 document.getElementById('spin-button').style.display = 'none';
                 document.getElementById('lose').style.display = 'block'
             }
-        }, 200)
+        }, 200)// run after 200ms
     }
 
     
@@ -433,7 +438,7 @@ function calculateWin(betAmount){
         win = true;
     }
 
-    // If there is a line straight across the center with no Stars, hasn't already won, and no matching symbols meaning there is only one square, one triangle, and one x in any position they get back the money they put in they don't win more they
+    // If there is a line straight across the center with no Stars, hasn't already won, and no matching symbols meaning there is only one square, one triangle, and one x in any position they get back the money they put in
     if(middleMiddle.innerHTML !== middleRight.innerHTML &&middleLeft.innerHTML !== middleRight.innerHTML && middleLeft.innerHTML !== middleMiddle.innerHTML && middleLeft.innerHTML !== '✰' && middleMiddle.innerHTML !== '✰' && middleRight.innerHTML !== '✰' && !win){
         console.log("Mismatch Win");
         betAmount *= 1;
@@ -446,7 +451,8 @@ function calculateWin(betAmount){
         middleRight.style.backgroundColor = 'darkorange';
         win = true;
     }
-    // If win is
+    
+    // If win isn't true than you lose
     if(!win){
         outcome.innerHTML = "Lose";
         console.log("Lose");
