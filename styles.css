@@ -27,7 +27,7 @@ table{
 }
 
 #help:hover{
-    background-color: rgb(210, 25, 210);
+    background-color: rgb(190, 15, 190);
     border: 3px black inset;
 }
 
@@ -65,7 +65,7 @@ input::placeholder{
 }
 
 #spin-button:hover{
-    background-color: rgb(210, 25, 210);
+    background-color: rgb(190, 15, 190);
     border: 3px black inset;
 }
 
