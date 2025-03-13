@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p id="outcome"></p>
+        <label for="help" id="helpLabel">How To Play</label><br>
+        <a href="guide.html"><button id="help" name="help" title="Guide">?</button></a>
+        <table id="spinOutput">
+            <tr id="top-row">
+                <td id="top-row-left"></td>
+                <td id="top-row-middle"></td>
+                <td id="top-row-right"></td>
+            </tr>
+            <tr id="middle-row">
+                <td id="middle-row-left"></td>
+                <td id="middle-row-middle"></td>
+                <td id="middle-row-right"></td>
+            </tr>
+            <tr id="bottom-row">
+                <td id="bottom-row-left"></td>
+                <td id="bottom-row-middle"></td>
+                <td id="bottom-row-right"></td>
+            </tr>
+        </table>
+        <div id="balance"></div>
+        <input type="number" name="bet-amount" id="bet-amount" min="0" placeholder="Enter Bet"><br>
+        <div id="buttonArea">
+            <p id="lose" style="display: none;">You Lost All Of Your Money</p>
+            <button onclick="spin()" id="spin-button">Spin</button>
+        </div>
+    </div>
+    <button onclick="no()" id="no" title="Secret?"></button>
+    <script src="script.js"></script>
+</body>
+</html>

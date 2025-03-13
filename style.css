@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body{
+    max-width: 800px;
+    background-color: rgb(200, 20, 200);
+    padding-top: 40px;
+}
+
+h1, li, h2, p{
+    font-size: 25px;
+}
+
+button{
+    background-color: rgb(200, 20, 200);
+    font-size: 20px;
+    border: 3px black outset;
+}
+
+button:hover{
+    background-color: (148, 0, 148);
+    border: 3px black inset;
+}

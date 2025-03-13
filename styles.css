@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body{
+    max-width: 800px;
+    background-color: rgb(200, 20, 200);
+}
+
+table{
+    margin: 10px 271.5px 20px auto;
+    border: 3px black solid;
+}
+
+#helpLabel{
+    float: left;
+    left: 50px;
+}
+
+#help{
+    float: left;
+    background-color: rgb(200, 20, 200);
+    border: 3px black outset;
+    font-size: 20px;
+    left: 50px;
+}
+
+#help:hover{
+    background-color: rgb(210, 25, 210);
+    border: 3px black inset;
+}
+
+td{
+    border-left: 10px black solid;
+    border-right: 10px black solid;
+    padding: 5px;
+    font-size: 50px;
+    height: 66.4px;
+    width: 81.98px;
+    font-weight: 1000;
+    padding: 0 10px;
+}
+
+input{
+    display: block;
+    text-align: center;
+    background-color: rgb(200, 20, 200);
+    border-color: black;
+    font-weight: 1000;
+    color: black;
+    width: 100px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+#spin-button{
+    display: block;
+    font-weight: 1000;
+    background-color: rgb(200, 20, 200);
+    border: 3px black outset;
+    padding: 10px 20px
+}
+
+#spin-button:hover{
+    background-color: rgb(210, 25, 210);
+    border: 3px black inset;
+}
+
+#lose{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+#balance{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 1000;
+}
+
+#outcome{
+    text-align: center;
+    margin-top: 90px;
+    padding: 21.2px;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+#no{
+    border: none;
+    background-color: inherit;
+    height: 100px;
+    width: 100px;
+}
+
+#no:hover{
+    background-color: rgb(199, 35, 199);
+}
