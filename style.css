@@ -20,6 +20,6 @@ button{
 }
 
 button:hover{
-    background-color: (148, 0, 148);
+    background-color: rgb(210, 25, 210);
     border: 3px black inset;
 }
